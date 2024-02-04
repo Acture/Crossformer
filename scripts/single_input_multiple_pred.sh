@@ -37,7 +37,7 @@ shift
 all_datasets="ETTh1 ETTh2 ETTm1 ETTm2 weather electricity illness traffic"
 
 # Check if the first argument is "all"
-if [[ $1 == "all" ]]; then
+if [ "$1" = "all" ]; then
 	# If so, use all_datasets
 	datasets=$all_datasets
 else
@@ -46,7 +46,7 @@ else
 fi
 
 for dataset in $datasets; do
-	if [ "$dataset" == "illness" ]; then
+	if [ "$dataset" = "illness" ]; then
 		predict_lengths="24 36 48 60"
 	else
 		predict_lengths="96 192 336 720"
