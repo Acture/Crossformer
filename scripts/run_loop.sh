@@ -15,7 +15,7 @@ do
 		   --n_heads 2\
 		   --learning_rate 5e-5\
 		   --lradj fixed\
-		   --itr 5\ > "logs/exp_"$data"_"$predict_len"_"$in_len.log
+		   --itr 5\ > "logs/exp_"$arg"_"$predict_len"_"$in_len.log
 		done
 	done
 	python log_extractor.py $arg".*" -s $arg".csv"
