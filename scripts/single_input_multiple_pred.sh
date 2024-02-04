@@ -32,6 +32,18 @@ run_command_for_dataset() {
 	$python_command > $logfile
 }
 
+if [ "$#" -lt 2 ]; then
+    echo "Usage: $0 [input length] [datasets]"
+    exit 1
+fi
+
+
+if ! [ "$1" -eq "$1" ] 2>/dev/null; then
+   echo "Error: Input Length must be a number."
+   exit 1
+fi
+
+
 in_len=$1
 shift
 all_datasets="ETTh1 ETTh2 ETTm1 ETTm2 weather electricity illness traffic"
