@@ -1,0 +1,7 @@
+Args in experiment:
+Namespace(baseline=False, batch_size=32, checkpoints='./checkpoints/', d_ff=512, d_model=256, data='weather', data_dim=12, data_path='weather.csv', data_split=[20160, 7200, 7200], devices='0,1,2,3', dropout=0.2, e_layers=3, factor=10, gpu=0, in_len=192, itr=5, learning_rate=0.0001, lradj='type1', n_heads=4, num_workers=0, out_len=720, patience=3, root_path='./datasets/', save_pred=False, seg_len=24, train_epochs=20, use_gpu=True, use_multi_gpu=False, win_size=2)
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_weather_il192_ol720_sl24_win2_fa10_dm256_nh4_el3_itr0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 19249
+val 6481
+test 6481
