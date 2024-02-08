@@ -1,0 +1,219 @@
+Args in experiment:
+Namespace(baseline=False, batch_size=32, checkpoints='./checkpoints/', d_ff=512, d_model=256, data='illness', data_dim=7, data_path='national_illness.csv', data_split=[0.7, 0.1, 0.2], devices='0,1,2,3', dropout=0.6, e_layers=2, factor=10, gpu=0, in_len=60, itr=5, learning_rate=0.0005, lradj='type1', n_heads=4, num_workers=0, out_len=24, patience=3, root_path='./datasets/', save_pred=False, seg_len=6, train_epochs=20, use_gpu=True, use_multi_gpu=False, win_size=2)
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr0>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 593
+val 74
+test 170
+Epoch: 1 cost time: 3.74211049079895
+Epoch: 1, Steps: 19 | Train Loss: 1.2717675 Vali Loss: 0.6640247 Test Loss: 3.3990487
+Validation loss decreased (inf --> 0.664025).  Saving model ...
+Epoch: 2 cost time: 1.0747597217559814
+Epoch: 2, Steps: 19 | Train Loss: 0.8268556 Vali Loss: 0.3277255 Test Loss: 2.8968917
+Validation loss decreased (0.664025 --> 0.327725).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 1.018681287765503
+Epoch: 3, Steps: 19 | Train Loss: 0.6656366 Vali Loss: 0.2363095 Test Loss: 3.2308475
+Validation loss decreased (0.327725 --> 0.236310).  Saving model ...
+Epoch: 4 cost time: 1.0203397274017334
+Epoch: 4, Steps: 19 | Train Loss: 0.6102219 Vali Loss: 0.3344490 Test Loss: 3.0200399
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 1.02508544921875
+Epoch: 5, Steps: 19 | Train Loss: 0.5607451 Vali Loss: 0.2116268 Test Loss: 3.4524275
+Validation loss decreased (0.236310 --> 0.211627).  Saving model ...
+Epoch: 6 cost time: 1.0315940380096436
+Epoch: 6, Steps: 19 | Train Loss: 0.5327694 Vali Loss: 0.2035890 Test Loss: 3.7828037
+Validation loss decreased (0.211627 --> 0.203589).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 7 cost time: 1.008169174194336
+Epoch: 7, Steps: 19 | Train Loss: 0.5115165 Vali Loss: 0.2312777 Test Loss: 3.6631447
+EarlyStopping counter: 1 out of 3
+Epoch: 8 cost time: 1.0115184783935547
+Epoch: 8, Steps: 19 | Train Loss: 0.5040039 Vali Loss: 0.2297138 Test Loss: 3.6510746
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.125e-05
+Epoch: 9 cost time: 1.002875804901123
+Epoch: 9, Steps: 19 | Train Loss: 0.4914454 Vali Loss: 0.2253803 Test Loss: 3.9934228
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr0<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 170
+mse:3.8571436405181885, mae:1.3506096601486206
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr1>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 593
+val 74
+test 170
+Epoch: 1 cost time: 1.00956392288208
+Epoch: 1, Steps: 19 | Train Loss: 1.3089628 Vali Loss: 0.5779058 Test Loss: 3.8721183
+Validation loss decreased (inf --> 0.577906).  Saving model ...
+Epoch: 2 cost time: 1.025552749633789
+Epoch: 2, Steps: 19 | Train Loss: 0.8253183 Vali Loss: 0.3199338 Test Loss: 3.6850358
+Validation loss decreased (0.577906 --> 0.319934).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 1.1774084568023682
+Epoch: 3, Steps: 19 | Train Loss: 0.6510706 Vali Loss: 0.2346420 Test Loss: 2.9708012
+Validation loss decreased (0.319934 --> 0.234642).  Saving model ...
+Epoch: 4 cost time: 1.6475861072540283
+Epoch: 4, Steps: 19 | Train Loss: 0.5862211 Vali Loss: 0.2786134 Test Loss: 3.1859016
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 1.6851763725280762
+Epoch: 5, Steps: 19 | Train Loss: 0.5494161 Vali Loss: 0.2018765 Test Loss: 3.3145127
+Validation loss decreased (0.234642 --> 0.201877).  Saving model ...
+Epoch: 6 cost time: 1.364595651626587
+Epoch: 6, Steps: 19 | Train Loss: 0.5265562 Vali Loss: 0.2382335 Test Loss: 4.1361205
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-05
+Epoch: 7 cost time: 1.792569637298584
+Epoch: 7, Steps: 19 | Train Loss: 0.4961852 Vali Loss: 0.2316179 Test Loss: 3.7343789
+EarlyStopping counter: 2 out of 3
+Epoch: 8 cost time: 1.5981531143188477
+Epoch: 8, Steps: 19 | Train Loss: 0.4934608 Vali Loss: 0.2053839 Test Loss: 4.0951783
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr1<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 170
+mse:3.370551586151123, mae:1.2099586725234985
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr2>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 593
+val 74
+test 170
+Epoch: 1 cost time: 1.0324432849884033
+Epoch: 1, Steps: 19 | Train Loss: 1.2689428 Vali Loss: 0.5831767 Test Loss: 3.5802005
+Validation loss decreased (inf --> 0.583177).  Saving model ...
+Epoch: 2 cost time: 1.0109968185424805
+Epoch: 2, Steps: 19 | Train Loss: 0.8044457 Vali Loss: 0.2985485 Test Loss: 3.3270591
+Validation loss decreased (0.583177 --> 0.298549).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 0.9953789710998535
+Epoch: 3, Steps: 19 | Train Loss: 0.6465924 Vali Loss: 0.2375909 Test Loss: 2.7971310
+Validation loss decreased (0.298549 --> 0.237591).  Saving model ...
+Epoch: 4 cost time: 0.9876446723937988
+Epoch: 4, Steps: 19 | Train Loss: 0.5829043 Vali Loss: 0.2245961 Test Loss: 2.8721466
+Validation loss decreased (0.237591 --> 0.224596).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 1.0217869281768799
+Epoch: 5, Steps: 19 | Train Loss: 0.5462658 Vali Loss: 0.2023197 Test Loss: 3.2004505
+Validation loss decreased (0.224596 --> 0.202320).  Saving model ...
+Epoch: 6 cost time: 1.065521240234375
+Epoch: 6, Steps: 19 | Train Loss: 0.5224287 Vali Loss: 0.2235023 Test Loss: 3.3144855
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 6.25e-05
+Epoch: 7 cost time: 0.9993784427642822
+Epoch: 7, Steps: 19 | Train Loss: 0.5161395 Vali Loss: 0.2151414 Test Loss: 3.3642747
+EarlyStopping counter: 2 out of 3
+Epoch: 8 cost time: 1.0102922916412354
+Epoch: 8, Steps: 19 | Train Loss: 0.4945350 Vali Loss: 0.2273733 Test Loss: 3.3143294
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr2<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 170
+mse:3.2820162773132324, mae:1.1809109449386597
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr3>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 593
+val 74
+test 170
+Epoch: 1 cost time: 1.0117230415344238
+Epoch: 1, Steps: 19 | Train Loss: 1.2845126 Vali Loss: 0.6674083 Test Loss: 4.4291823
+Validation loss decreased (inf --> 0.667408).  Saving model ...
+Epoch: 2 cost time: 1.0165793895721436
+Epoch: 2, Steps: 19 | Train Loss: 0.8166524 Vali Loss: 0.3507968 Test Loss: 2.7212639
+Validation loss decreased (0.667408 --> 0.350797).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 1.0156009197235107
+Epoch: 3, Steps: 19 | Train Loss: 0.6646693 Vali Loss: 0.2581411 Test Loss: 2.7615586
+Validation loss decreased (0.350797 --> 0.258141).  Saving model ...
+Epoch: 4 cost time: 0.988070011138916
+Epoch: 4, Steps: 19 | Train Loss: 0.6105480 Vali Loss: 0.2510366 Test Loss: 3.3106190
+Validation loss decreased (0.258141 --> 0.251037).  Saving model ...
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 1.051631212234497
+Epoch: 5, Steps: 19 | Train Loss: 0.5625920 Vali Loss: 0.2396723 Test Loss: 2.7699207
+Validation loss decreased (0.251037 --> 0.239672).  Saving model ...
+Epoch: 6 cost time: 1.3094050884246826
+Epoch: 6, Steps: 19 | Train Loss: 0.5419430 Vali Loss: 0.2330373 Test Loss: 2.9015523
+Validation loss decreased (0.239672 --> 0.233037).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 7 cost time: 2.167776584625244
+Epoch: 7, Steps: 19 | Train Loss: 0.5116234 Vali Loss: 0.2206737 Test Loss: 3.0516478
+Validation loss decreased (0.233037 --> 0.220674).  Saving model ...
+Epoch: 8 cost time: 1.2796630859375
+Epoch: 8, Steps: 19 | Train Loss: 0.5049744 Vali Loss: 0.2238878 Test Loss: 3.1073424
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 3.125e-05
+Epoch: 9 cost time: 1.8321051597595215
+Epoch: 9, Steps: 19 | Train Loss: 0.4946900 Vali Loss: 0.2121901 Test Loss: 3.0619628
+Validation loss decreased (0.220674 --> 0.212190).  Saving model ...
+Epoch: 10 cost time: 1.7571463584899902
+Epoch: 10, Steps: 19 | Train Loss: 0.4950443 Vali Loss: 0.2276488 Test Loss: 3.1803652
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 1.5625e-05
+Epoch: 11 cost time: 1.0111896991729736
+Epoch: 11, Steps: 19 | Train Loss: 0.4842142 Vali Loss: 0.2081658 Test Loss: 3.2640388
+Validation loss decreased (0.212190 --> 0.208166).  Saving model ...
+Epoch: 12 cost time: 0.9613733291625977
+Epoch: 12, Steps: 19 | Train Loss: 0.4804307 Vali Loss: 0.2385839 Test Loss: 3.1615771
+EarlyStopping counter: 1 out of 3
+Epoch: 13 cost time: 0.9838213920593262
+Epoch: 13, Steps: 19 | Train Loss: 0.4752950 Vali Loss: 0.2127439 Test Loss: 3.2780507
+EarlyStopping counter: 2 out of 3
+Epoch: 14 cost time: 0.9969699382781982
+Epoch: 14, Steps: 19 | Train Loss: 0.4711576 Vali Loss: 0.2038970 Test Loss: 3.2247972
+Validation loss decreased (0.208166 --> 0.203897).  Saving model ...
+Epoch: 15 cost time: 1.0017859935760498
+Epoch: 15, Steps: 19 | Train Loss: 0.4767911 Vali Loss: 0.2238830 Test Loss: 3.3198921
+EarlyStopping counter: 1 out of 3
+Epoch: 16 cost time: 0.9632358551025391
+Epoch: 16, Steps: 19 | Train Loss: 0.4667702 Vali Loss: 0.2249718 Test Loss: 3.2820915
+EarlyStopping counter: 2 out of 3
+Epoch: 17 cost time: 0.9274780750274658
+Epoch: 17, Steps: 19 | Train Loss: 0.4639411 Vali Loss: 0.2367721 Test Loss: 3.2946482
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr3<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 170
+mse:3.2948858737945557, mae:1.191245198249817
+Use GPU: cuda:0
+>>>>>>>start training : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr4>>>>>>>>>>>>>>>>>>>>>>>>>>
+train 593
+val 74
+test 170
+Epoch: 1 cost time: 0.9881641864776611
+Epoch: 1, Steps: 19 | Train Loss: 1.1853867 Vali Loss: 0.6282720 Test Loss: 4.0373370
+Validation loss decreased (inf --> 0.628272).  Saving model ...
+Epoch: 2 cost time: 0.9250237941741943
+Epoch: 2, Steps: 19 | Train Loss: 0.7937422 Vali Loss: 0.2953150 Test Loss: 3.2260140
+Validation loss decreased (0.628272 --> 0.295315).  Saving model ...
+Updating learning rate to 0.00025
+Epoch: 3 cost time: 0.9974145889282227
+Epoch: 3, Steps: 19 | Train Loss: 0.6340712 Vali Loss: 0.2377802 Test Loss: 3.0242147
+Validation loss decreased (0.295315 --> 0.237780).  Saving model ...
+Epoch: 4 cost time: 0.9153530597686768
+Epoch: 4, Steps: 19 | Train Loss: 0.5773175 Vali Loss: 0.2670004 Test Loss: 2.7134250
+EarlyStopping counter: 1 out of 3
+Updating learning rate to 0.000125
+Epoch: 5 cost time: 0.929783821105957
+Epoch: 5, Steps: 19 | Train Loss: 0.5400029 Vali Loss: 0.2222509 Test Loss: 3.2951078
+Validation loss decreased (0.237780 --> 0.222251).  Saving model ...
+Epoch: 6 cost time: 0.9175412654876709
+Epoch: 6, Steps: 19 | Train Loss: 0.5127411 Vali Loss: 0.2144696 Test Loss: 3.4908202
+Validation loss decreased (0.222251 --> 0.214470).  Saving model ...
+Updating learning rate to 6.25e-05
+Epoch: 7 cost time: 1.1199164390563965
+Epoch: 7, Steps: 19 | Train Loss: 0.5016890 Vali Loss: 0.2184919 Test Loss: 3.7370892
+EarlyStopping counter: 1 out of 3
+Epoch: 8 cost time: 1.1593339443206787
+Epoch: 8, Steps: 19 | Train Loss: 0.4835891 Vali Loss: 0.2444991 Test Loss: 3.3271997
+EarlyStopping counter: 2 out of 3
+Updating learning rate to 3.125e-05
+Epoch: 9 cost time: 1.3089866638183594
+Epoch: 9, Steps: 19 | Train Loss: 0.4800463 Vali Loss: 0.2377710 Test Loss: 3.7385407
+EarlyStopping counter: 3 out of 3
+Early stopping
+>>>>>>>testing : Crossformer_illness_il60_ol24_sl6_win2_fa10_dm256_nh4_el2_itr4<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+test 170
+mse:3.5766496658325195, mae:1.29030179977417
